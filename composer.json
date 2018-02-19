@@ -24,6 +24,7 @@
         "laravel": {
             "dont-discover": [
             ]
+            }
     },
     "config": {
         "preferred-install": "dist",
