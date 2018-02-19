@@ -21,9 +21,13 @@
         }
     },
     "extra": {
-        "branch-alias": {
-            "dev-master": "0.5-dev"
-        }
+        "laravel": {
+            "dont-discover": [
+            ]
     },
-    "minimum-stability": "stable"
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    }
 }
