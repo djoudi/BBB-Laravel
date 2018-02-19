@@ -3,23 +3,23 @@
 This is a laravel wrapper for BigBlueButton API
 ## Requirements
 
-- Laravel 5.3 or above.
+- Laravel 5.5 or above.
 
 ## Installation
 
 Require package in your composer.json and update composer.  This downloads the package and the official bigbluebutton php library. 
 
 ```
-composer require abiodunjames/bigbluebutton
+composer require djoudi/bigbluebutton
 ```
 
 After updating composer, add the ServiceProvider to the providers array in config/app.php
 ```
- Abiodunjames\Bigbluebutton\BigbluebuttonProviderService::class,
+ Djoudi\Bigbluebutton\BigbluebuttonProviderService::class,
 ```
 You can optionally use the facade for shorter code. Add this to your facades:
 ```
-'Meeting' => Abiodunjames\Bigbluebutton\BigbluebuttonMeeting::class,
+'Meeting' => Djoudi\Bigbluebutton\BigbluebuttonMeeting::class,
 ```
 
 ## Usage
@@ -44,7 +44,7 @@ namespace App\Http\Controllers;
 class MeetingController extends Controller
 {
     /**
-     * @var \Abiodunjames\Bigbluebutton\Contracts\Meeting
+     * @var \Djoudi\Bigbluebutton\Contracts\Meeting
      */
     protected $meeting;
 
@@ -66,14 +66,14 @@ class MeetingController extends Controller
 ```
 **Create meeting**
 ```php
-use Abiodunjames\Bigbluebutton\Contracts\Meeting;
+use Djoudi\Bigbluebutton\Contracts\Meeting;
 use BigBlueButton\Parameters\CreateMeetingParameters;
 use Illuminate\Http\Request;
 
 class MeetingController extends Controller
 {
     /**
-     * @var \Abiodunjames\Bigbluebutton\Contracts\Meeting
+     * @var \Djoudi\Bigbluebutton\Contracts\Meeting
      */
     protected $meeting;
 
@@ -102,14 +102,14 @@ class MeetingController extends Controller
 ```
 **Join a meeting**
 ```php
-use Abiodunjames\Bigbluebutton\Contracts\Meeting;
+use Djoudi\Bigbluebutton\Contracts\Meeting;
 use BigBlueButton\Parameters\JoinMeetingParameters;
 use Illuminate\Http\Request;
 
 class MeetingController extends Controller
 {
     /**
-     * @var \Abiodunjames\Bigbluebutton\Contracts\Meeting
+     * @var \Djoudi\Bigbluebutton\Contracts\Meeting
      */
     protected $meeting;
 
@@ -137,14 +137,14 @@ class MeetingController extends Controller
 **Close meeting**
 ```php
 
-use Abiodunjames\Bigbluebutton\Contracts\Meeting;
+use Djoudi\Bigbluebutton\Contracts\Meeting;
 use BigBlueButton\Parameters\EndMeetingParameters;
 use Illuminate\Http\Request;
 
 class MeetingController extends Controller
 {
     /**
-     * @var \Abiodunjames\Bigbluebutton\Contracts\Meeting
+     * @var \Djoudi\Bigbluebutton\Contracts\Meeting
      */
     protected $meeting;
 
