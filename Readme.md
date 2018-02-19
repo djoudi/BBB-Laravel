@@ -10,7 +10,7 @@ This is a laravel wrapper for BigBlueButton API
 Require package in your composer.json and update composer.  This downloads the package and the official bigbluebutton php library. 
 
 ```
-composer require djoudi/bigbluebutton
+composer require djoudi/bbb-laravel5.5
 ```
 
 After updating composer, add the ServiceProvider to the providers array in config/app.php
