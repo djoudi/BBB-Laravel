@@ -9,6 +9,7 @@
             "email": "info@djoudi.net"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
         "php": ">=7.0",
         "laravel/framework": "5.5.*",
