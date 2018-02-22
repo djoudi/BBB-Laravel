@@ -1,5 +1,5 @@
 
-# Laravel integration with Travis CI
+# BBB Laravel integration with Travis CI
 
 [![Build Status](https://travis-ci.org/djoudi/BBB-Laravel5.5.svg?branch=master)](https://travis-ci.org/djoudi/BBB-Laravel5.5)
 
