@@ -1,7 +1,6 @@
 
-# BBB Laravel integration with Travis CI
-
 [![Build Status](https://travis-ci.org/djoudi/BBB-Laravel5.5.svg?branch=master)](https://travis-ci.org/djoudi/BBB-Laravel5.5)
+[![StyleCI](https://styleci.io/repos/122086438/shield?branch=master)](https://styleci.io/repos/122086438)
 
 
 # BigBlueButton API  Wrapper for Laravel 
