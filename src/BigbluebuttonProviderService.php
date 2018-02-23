@@ -2,8 +2,8 @@
 
 namespace Djoudi\Bigbluebutton;
 
-use Djoudi\Bigbluebutton\Contracts\Meeting;
 use BigBlueButton\BigBlueButton;
+use Djoudi\Bigbluebutton\Contracts\Meeting;
 use Illuminate\Support\ServiceProvider;
 
 class BigbluebuttonProviderService extends ServiceProvider
@@ -33,7 +33,7 @@ class BigbluebuttonProviderService extends ServiceProvider
             return new BigbluebuttonMeeting($app['bigbluebutton']);
         });
 
-        $this->app->bind(Meeting::class, function($app){
+        $this->app->bind(Meeting::class, function ($app) {
             return new BigbluebuttonMeeting($app['bigbluebutton']);
         });
     }
