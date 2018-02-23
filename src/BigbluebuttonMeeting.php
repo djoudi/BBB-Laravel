@@ -1,13 +1,14 @@
 <?php
+
 namespace Djoudi\Bigbluebutton;
 
-use Djoudi\Bigbluebutton\Contracts\Meeting;
 use BigBlueButton\BigBlueButton;
 use BigBlueButton\Parameters\CreateMeetingParameters;
 use BigBlueButton\Parameters\EndMeetingParameters;
 use BigBlueButton\Parameters\GetMeetingInfoParameters;
 use BigBlueButton\Parameters\GetRecordingsParameters;
 use BigBlueButton\Parameters\JoinMeetingParameters;
+use Djoudi\Bigbluebutton\Contracts\Meeting;
 
 class BigbluebuttonMeeting implements Meeting
 {
@@ -18,11 +19,11 @@ class BigbluebuttonMeeting implements Meeting
 
     public function __construct(BigBlueButton $bbb)
     {
-        $this->bbb =$bbb;
+        $this->bbb = $bbb;
     }
 
     /**
-     *  Return a list of all meetings
+     *  Return a list of all meetings.
      *
      * @return mixed
      */
@@ -38,6 +39,7 @@ class BigbluebuttonMeeting implements Meeting
 
     /**
      * @param \BigBlueButton\Parameters\CreateMeetingParameters $meeting
+     *
      * @return bool
      */
     public function create(CreateMeetingParameters $meeting)
@@ -51,9 +53,10 @@ class BigbluebuttonMeeting implements Meeting
     }
 
     /**
-     *  Join meeting
+     *  Join meeting.
      *
      * @param \BigBlueButton\Parameters\JoinMeetingParameters $meeting
+     *
      * @return string
      */
     public function join(JoinMeetingParameters $meeting)
@@ -62,9 +65,10 @@ class BigbluebuttonMeeting implements Meeting
     }
 
     /**
-     *  Returns information about the meeting
+     *  Returns information about the meeting.
      *
      * @param \BigBlueButton\Parameters\GetMeetingInfoParameters $meeting
+     *
      * @return bool|\SimpleXMLElement
      */
     public function get(GetMeetingInfoParameters $meeting)
@@ -78,9 +82,10 @@ class BigbluebuttonMeeting implements Meeting
     }
 
     /**
-     *  Close meeting
+     *  Close meeting.
      *
      * @param \BigBlueButton\Parameters\EndMeetingParameters $meeting
+     *
      * @return \BigBlueButton\Responses\EndMeetingResponse
      */
     public function close(EndMeetingParameters $meeting)
@@ -89,8 +94,8 @@ class BigbluebuttonMeeting implements Meeting
     }
 
     /**
-     *
      * @param \BigBlueButton\Parameters\GetRecordingsParameters $recording
+     *
      * @return mixed
      */
     public function getRecording(GetRecordingsParameters $recording)

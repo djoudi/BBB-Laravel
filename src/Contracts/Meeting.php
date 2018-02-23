@@ -1,5 +1,6 @@
 <?php
-declare(strict_types = 1);
+
+declare(strict_types=1);
 
 namespace Djoudi\Bigbluebutton\Contracts;
 
@@ -12,7 +13,7 @@ use BigBlueButton\Parameters\JoinMeetingParameters;
 interface Meeting
 {
     /**
-     *  Return a list of all meetings
+     *  Return a list of all meetings.
      *
      * @return mixed
      */
@@ -20,37 +21,41 @@ interface Meeting
 
     /**
      * @param \BigBlueButton\Parameters\CreateMeetingParameters $meeting
+     *
      * @return bool
      */
     public function create(CreateMeetingParameters $meeting);
 
     /**
-     *  Join meeting
+     *  Join meeting.
      *
      * @param \BigBlueButton\Parameters\JoinMeetingParameters $meeting
+     *
      * @return string
      */
     public function join(JoinMeetingParameters $meeting);
 
     /**
-     *  Returns information about the meeting
+     *  Returns information about the meeting.
      *
      * @param \BigBlueButton\Parameters\GetMeetingInfoParameters $meeting
+     *
      * @return bool|\SimpleXMLElement
      */
     public function get(GetMeetingInfoParameters $meeting);
 
     /**
-     *  Close meeting
+     *  Close meeting.
      *
      * @param \BigBlueButton\Parameters\EndMeetingParameters $meeting
+     *
      * @return \BigBlueButton\Responses\EndMeetingResponse
      */
     public function close(EndMeetingParameters $meeting);
 
     /**
-     *
      * @param \BigBlueButton\Parameters\GetRecordingsParameters $recording
+     *
      * @return mixed
      */
     public function getRecording(GetRecordingsParameters $recording);
