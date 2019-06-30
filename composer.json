@@ -10,7 +10,7 @@
         }
     ],
     "minimum-stability": "dev",
-    "prefer-stable": false,
+    "prefer-stable": true,
     "require": {
         "php": ">=7.0",
         "laravel/framework": "5.5.*",
@@ -24,8 +24,12 @@
     },
     "extra": {
         "laravel": {
-            "dont-discover": [
-            ]
+           "providers": [
+                "Djoudi\\Bigbluebutton\\BigbluebuttonProviderService::class"
+            ],
+            "aliases": {
+                "Meeting": "Djoudi\\Bigbluebutton\\BigbluebuttonMeeting::class"
+            }
             }
     },
     "config": {
