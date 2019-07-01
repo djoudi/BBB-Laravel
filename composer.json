@@ -25,10 +25,10 @@
     "extra": {
         "laravel": {
            "providers": [
-                "Djoudi\\Bigbluebutton\\BigbluebuttonProviderService::class"
+                "Djoudi\\Bigbluebutton\\BigbluebuttonProviderService"
             ],
             "aliases": {
-                "Meeting": "Djoudi\\Bigbluebutton\\BigbluebuttonMeeting::class"
+                "Meeting": "Djoudi\\Bigbluebutton\\BigbluebuttonMeeting"
             }
             }
     },
