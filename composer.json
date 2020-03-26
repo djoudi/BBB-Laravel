@@ -1,6 +1,6 @@
 {
     "name": "djoudi/bbb-laravel5.5",
-    "description": "Bigbluebutton wrapper for laravel 5.5",
+    "description": "Bigbluebutton wrapper for laravel",
     "license": "MIT",
     "keywords": ["laravel", "bigbluebutton", "wrapper"],
     "authors": [
@@ -13,8 +13,8 @@
     "prefer-stable": true,
     "require": {
         "php": ">=7.0",
-        "laravel/framework": "5.5.*",
-        "bigbluebutton/bigbluebutton-api-php": "2.0.5"
+        "laravel/framework": "^5.5.0|^6.0|^7.0",
+        "bigbluebutton/bigbluebutton-api-php": "2.0.7"
 
     },
     "autoload": {
