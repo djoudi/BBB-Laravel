@@ -1,5 +1,5 @@
 {
-    "name": "djoudi/bbb-laravel5.5",
+    "name": "djoudi/bbb-laravel",
     "description": "Bigbluebutton wrapper for laravel",
     "license": "MIT",
     "keywords": ["laravel", "bigbluebutton", "wrapper"],
