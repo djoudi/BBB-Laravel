@@ -9,12 +9,12 @@
             "email": "info@djoudi.net"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
-        "php": ">=7.1",
-        "laravel/framework": "^5.5.0|^6.0|^7.0|^8.0",
-        "bigbluebutton/bigbluebutton-api-php": "2.1.4"
+        "php": "^8.4",
+        "laravel/framework": "^12.0",
+        "bigbluebutton/bigbluebutton-api-php": "^2.3.1"
 
     },
     "autoload": {

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Djoudi\Bigbluebutton;
 
 use BigBlueButton\BigBlueButton;
@@ -8,13 +10,13 @@ use Illuminate\Support\ServiceProvider;
 
 class BigbluebuttonProviderService extends ServiceProvider
 {
-    public function boot()
+    public function boot(): void
     {
         //Merge Config
         $this->publishes([__DIR__.'/Config/bigbluebutton.php' => config_path('bigbluebutton.php')], 'config');
     }
 
-    public function register()
+    public function register(): void
     {
         $this->mergeConfigFrom(__DIR__.'/Config/bigbluebutton.php', 'bigbluebutton');
         $server_base_url = $this->app['config']->get('bigbluebutton.BBB_SERVER_BASE_URL');
