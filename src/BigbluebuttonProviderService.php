@@ -12,7 +12,7 @@ class BigbluebuttonProviderService extends ServiceProvider
 {
     public function boot(): void
     {
-        //Merge Config
+        // Merge Config
         $this->publishes([__DIR__.'/Config/bigbluebutton.php' => config_path('bigbluebutton.php')], 'config');
     }
 
@@ -26,7 +26,7 @@ class BigbluebuttonProviderService extends ServiceProvider
         putenv("BBB_SECURITY_SALT=$server_salt");
 
         $this->app->bind('bigbluebutton', function ($app) {
-            return new BigBlueButton();
+            return new BigBlueButton;
         });
 
         $this->app->alias('bigbluebutton', BigBlueButton::class);
